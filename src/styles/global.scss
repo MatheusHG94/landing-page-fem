@@ -15,4 +15,12 @@ body {
     font-family: $font-main;
     font-size: $font-size;
     font-weight: $font-main-weight;
+    width: 100vw;
+    height: 100vh;
+    background-color: $white;
+}
+
+.app-container {
+    width: 375px;
+    margin: 0 auto;
 }
