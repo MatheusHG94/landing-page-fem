@@ -6,12 +6,12 @@ export default function NavMenu() {
     return (
         <nav className={styles.NavMenu}>
             <HamburgerIcon />
-            {/* <ul>
+            <ul className={styles.NavMenu_list}>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Projects</a></li>
                 <li><a href="#">Contact</a></li>
-            </ul> */}
+            </ul>
         </nav>
     )
 }

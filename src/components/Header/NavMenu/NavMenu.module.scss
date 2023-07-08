@@ -4,13 +4,48 @@
     display: flex;
     flex-direction: column;
 
-    ul {
+    &::after {
+        content: '';
+        position: absolute;
+        top: 17%;
+        right: 5%;
+        border: 40px solid transparent;
+        border-right: 40px solid white;
+    }
+
+    &_list {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        width: 90%;
+        height: 55%;
         background-color: $white;
         list-style: none;
 
-        a {
-            color: $dark-grayish-blue;
-            text-decoration: none;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: space-evenly;
+
+        li {
+            a {
+                color: $dark-grayish-blue;
+                text-decoration: none;
+            }
+
+            &:last-child {
+                background-color: $yellow;
+                padding: 1rem 2.5rem;
+                border-radius: 50px;
+
+                a {
+                    font-family: $font-accent;
+                    color: $very-dark-desaturated-blue;
+                }
+            }
         }
+
     }
 }
