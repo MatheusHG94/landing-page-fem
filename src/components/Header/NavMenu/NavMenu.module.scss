@@ -1,0 +1,16 @@
+@import 'styles/variables';
+
+.NavMenu {
+    display: flex;
+    flex-direction: column;
+
+    ul {
+        background-color: $white;
+        list-style: none;
+
+        a {
+            color: $dark-grayish-blue;
+            text-decoration: none;
+        }
+    }
+}
