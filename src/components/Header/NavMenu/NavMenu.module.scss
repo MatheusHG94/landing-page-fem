@@ -1,16 +1,9 @@
 @import 'styles/variables';
 
 .NavMenu {
-    display: flex;
-    flex-direction: column;
-
-    &::after {
-        content: '';
-        position: absolute;
-        top: 17%;
-        right: 5%;
-        border: 40px solid transparent;
-        border-right: 40px solid white;
+    &_button {
+        cursor: pointer;
+        opacity: 100%;
     }
 
     &_list {
@@ -28,6 +21,16 @@
         flex-flow: column nowrap;
         align-items: center;
         justify-content: space-evenly;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            transform: translateY(-50%);
+            border: 35px solid transparent;
+            border-right: 35px solid $white;
+        }
 
         li {
             a {
