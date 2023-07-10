@@ -1,0 +1,36 @@
+@import 'styles/variables';
+
+.Testimonial {
+    text-align: center;
+    margin-top: 4rem;
+
+    &_image {
+        width: 80px;
+        height: 80px;
+        border-radius: 50px;
+        overflow: hidden;
+        margin: 0 auto;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    p {
+        color: $dark-grayish-blue;
+        line-height: 2rem;
+        margin: 2rem 0;
+    }
+
+    &_author {
+        color: $very-dark-desaturated-blue;
+        font-family: $font-accent;
+        font-weight: $font-weight-bolder;
+        margin: .5rem 0;
+    }
+
+    &_job {
+        color: $grayish-blue;
+        font-size: 1rem;
+    }
+}

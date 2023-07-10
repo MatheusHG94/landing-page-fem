@@ -1,0 +1,14 @@
+@import 'styles/variables';
+
+.TestimonialsSection {
+    padding: 4rem 1.5rem;
+
+    h2 {
+        font-family: $font-accent;
+        text-transform: uppercase;
+        color: $grayish-blue;
+        text-align: center;
+        font-size: 1rem;
+        letter-spacing: 4px;
+    }
+}

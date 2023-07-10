@@ -1,6 +1,7 @@
 import Header from 'components/Header';
 import HighlightSection from 'components/HighlightSection';
 import LearnMoreSection from 'components/LearnMoreSection';
+import TestimonialsSection from 'components/TestimonialsSection';
 import 'styles/global.scss';
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
         background='assets/images/mobile/image-photography.jpg'
         color='hsl(198, 62%, 26%)'
       />
+      <TestimonialsSection />
     </div>
   );
 }
