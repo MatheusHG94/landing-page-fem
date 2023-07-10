@@ -1,3 +1,4 @@
+import Gallery from 'components/Gallery';
 import Header from 'components/Header';
 import HighlightSection from 'components/HighlightSection';
 import LearnMoreSection from 'components/LearnMoreSection';
@@ -33,6 +34,7 @@ function App() {
         color='hsl(198, 62%, 26%)'
       />
       <TestimonialsSection />
+      <Gallery />
     </div>
   );
 }
