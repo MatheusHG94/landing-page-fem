@@ -1,0 +1,45 @@
+@import 'styles/variables';
+
+.LearnMoreSection {
+    &_banner {
+        height: 312px;
+    }
+
+    &_content {
+        padding: 4rem 1.5rem;
+        text-align: center;
+
+        h2 {
+            font-family: $font-accent;
+            font-weight: $font-weight-bolder;
+            color: $very-dark-desaturated-blue;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        p {
+            color: $dark-grayish-blue;
+            line-height: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        a {
+            font-family: $font-accent;
+            color: $very-dark-desaturated-blue;
+            font-weight: $font-weight-bolder;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+    }
+
+    &_underline {
+        content: '';
+        display: block;
+        height: 10px;
+        width: 150px;
+        margin: 0 auto;
+        margin-top: -8px;
+        border-radius: 50px;
+        opacity: 20%;
+    }
+}
