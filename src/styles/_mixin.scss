@@ -1,5 +1,5 @@
-@mixin font {
+@mixin font($color) {
     font-family: $font-accent;
     font-weight: $font-weight-bolder;
-    color: $very-dark-desaturated-blue;
+    color: $color;
 }

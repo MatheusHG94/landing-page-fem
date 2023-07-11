@@ -1,12 +1,11 @@
 @import 'styles/variables';
+@import 'styles/mixin';
 
 .TestimonialsSection {
     padding: 4rem 1.5rem;
 
     h2 {
-        font-family: $font-accent;
-        font-weight: $font-weight-bolder;
-        color: $grayish-blue;
+        @include font($grayish-blue);
         text-transform: uppercase;
         text-align: center;
         font-size: 1rem;

@@ -11,7 +11,7 @@
         text-align: center;
 
         h2 {
-            @include font;
+            @include font($very-dark-desaturated-blue);
             font-size: 2rem;
             margin-bottom: 2rem;
         }
@@ -23,7 +23,7 @@
         }
 
         a {
-            @include font;
+            @include font($very-dark-desaturated-blue);
             text-decoration: none;
             text-transform: uppercase;
         }

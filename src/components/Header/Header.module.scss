@@ -1,10 +1,11 @@
 @import 'styles/variables';
+@import 'styles/mixin';
 
 .Header {
     position: relative;
-    background-color: $background-blue;
-    /* background: $background-blue url('../../assets/images/mobile/image-header.jpg') no-repeat center;
-    background-size: cover; */
+    // background-color: $background-blue;
+    background: $background-blue url('../../assets/images/mobile/image-header.jpg') no-repeat center;
+    background-size: cover;
     height: 539px;
 
     &_bar {
@@ -14,9 +15,7 @@
     }
 
     h1 {
-        font-family: $font-accent;
-        font-weight: $font-weight-bolder;
-        color: $white;
+        @include font($white);
         text-align: center;
         text-transform: uppercase;
         letter-spacing: 5px;
