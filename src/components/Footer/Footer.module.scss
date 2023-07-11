@@ -1,0 +1,31 @@
+@import 'styles/variables';
+
+.Footer {
+    background-color: $background-footer;
+    padding: 4rem 2.5rem;
+    text-align: center;
+
+    &_logo {
+        margin-bottom: 2.5rem;
+        transform: scale(140%);
+    }
+
+    nav {
+        margin-bottom: 4rem;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+
+        a {
+            text-decoration: none;
+            color: $dark-moderate-cyan;
+        }
+    }
+
+    &_socialMedia {
+        padding: 1rem;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+    }
+}

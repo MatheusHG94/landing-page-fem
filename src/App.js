@@ -1,3 +1,4 @@
+import Footer from 'components/Footer';
 import Gallery from 'components/Gallery';
 import Header from 'components/Header';
 import HighlightSection from 'components/HighlightSection';
@@ -35,6 +36,7 @@ function App() {
       />
       <TestimonialsSection />
       <Gallery />
+      <Footer />
     </div>
   );
 }
