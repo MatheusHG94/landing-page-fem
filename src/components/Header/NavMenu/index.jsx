@@ -8,18 +8,22 @@ export default function NavMenu() {
 
     function toggleMenu(e) {
         if (!menuOpen){
-            e.target.style.opacity = '50%';
             setMenuOpen(true);
             return;
         }
-        e.target.style.opacity = '100%';
         setMenuOpen(false);
         return;
     }
 
     return (
         <nav className={styles.NavMenu}>
-            <div className={styles.NavMenu_button} onClick={e => toggleMenu(e)}>
+            <div 
+                className={`
+                    ${styles.NavMenu_button}
+                    ${menuOpen ? styles.NavMenu_button___dim : ''}
+                `}
+                onClick={e => toggleMenu(e)}
+            >
                 <HamburgerIcon />
             </div>
             <ul className={

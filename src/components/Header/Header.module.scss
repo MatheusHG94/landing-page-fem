@@ -2,8 +2,9 @@
 
 .Header {
     position: relative;
-    background: $background-blue url('../../assets/images/mobile/image-header.jpg') no-repeat center;
-    background-size: cover;
+    background-color: $background-blue;
+    /* background: $background-blue url('../../assets/images/mobile/image-header.jpg') no-repeat center;
+    background-size: cover; */
     height: 539px;
 
     &_bar {

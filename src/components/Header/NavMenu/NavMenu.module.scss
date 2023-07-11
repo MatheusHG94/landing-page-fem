@@ -4,6 +4,10 @@
     &_button {
         cursor: pointer;
         opacity: 100%;
+
+        &___dim {
+            opacity: 50%;
+        }
     }
 
     &_list {
