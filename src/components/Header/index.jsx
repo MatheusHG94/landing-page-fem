@@ -15,7 +15,9 @@ export default function Header() {
       }} */
     >
       <div className={styles.Header_bar}>
-        <Logo />
+        <a href="/">
+          <Logo />
+        </a>
         <NavMenu />
       </div>
       <h1>We are creatives</h1>
