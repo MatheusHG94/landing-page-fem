@@ -9,10 +9,13 @@ export default function LearnMoreSection({
 }) {
   return (
     <section className={styles.LearnMoreSection}>
-        <div className={styles.LearnMoreSection_banner} style={{
-            background: `${color} url(${banner}) no-repeat center`,
-            backgroundSize: 'cover'
-        }}></div>
+        <div 
+            className={styles.LearnMoreSection_banner} 
+            style={{
+                background: `${color} url(${banner}) no-repeat center`,
+                backgroundSize: 'cover'
+            }}
+        ></div>
         <div className={styles.LearnMoreSection_content}>
             <h2>
                 {title}
@@ -23,9 +26,12 @@ export default function LearnMoreSection({
             <a href='/'>
                 Learn more
             </a>
-            <div className={styles.LearnMoreSection_underline} style={{
-                backgroundColor: `${color}`
-            }}></div>
+            <div 
+                className={styles.LearnMoreSection_underline}
+                style={{
+                    backgroundColor: `${color}`
+                }}
+            ></div>
         </div>
     </section>
   )

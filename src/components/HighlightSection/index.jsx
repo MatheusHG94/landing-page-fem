@@ -8,11 +8,14 @@ export default function HighlightSection({
     color
 }) {
   return (
-    <section className={styles.HighlightSection} style={{
-        background: `${color} url(${background}) no-repeat center`,
-        backgroundSize: 'cover',
-        color: `${color}`
-    }}>
+    <section 
+        className={styles.HighlightSection} 
+        style={{
+            background: `${color} url(${background}) no-repeat center`,
+            backgroundSize: 'cover',
+            color: `${color}`
+        }}
+    >
         <h2>
             {title}
         </h2>

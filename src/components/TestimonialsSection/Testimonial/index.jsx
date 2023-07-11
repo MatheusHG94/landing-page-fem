@@ -10,7 +10,7 @@ export default function Testimonial({
   return (
     <div className={styles.Testimonial}>
         <div className={styles.Testimonial_image}>
-            <img src={image} alt='' />
+            <img src={image} alt='authors face' />
         </div>
         <p>
             {testimonial}
