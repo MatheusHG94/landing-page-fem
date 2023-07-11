@@ -43,14 +43,14 @@
             }
 
             &:last-child {
-                background-color: $yellow;
-                border-radius: 50px;
-
                 a {
                     font-family: $font-accent;
+                    font-weight: $font-weight-bold;
                     color: $very-dark-desaturated-blue;
                     display: block;
                     padding: 1rem 2.5rem;
+                    background-color: $yellow;
+                    border-radius: 50px;
                 }
             }
         }
