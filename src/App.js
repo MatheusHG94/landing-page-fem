@@ -23,7 +23,7 @@ function App() {
         color='hsl(7, 99%, 70%)'
       />
       <HighlightSection 
-        title='Graphic design'
+        title='Graphic Design'
         summary='Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.'
         background='assets/images/mobile/image-graphic-design.jpg'
         color='hsl(167, 40%, 24%)'
