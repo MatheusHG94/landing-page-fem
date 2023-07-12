@@ -26,17 +26,21 @@
             @include font($very-dark-desaturated-blue);
             text-decoration: none;
             text-transform: uppercase;
-        }
-    }
+            
+            div {
+                content: '';
+                display: block;
+                margin: 0 90px;
+                margin-top: -8px;
+                border-radius: 50px;
+                opacity: 20%;
+            }
 
-    &_underline {
-        content: '';
-        display: block;
-        height: 10px;
-        width: 150px;
-        margin: 0 auto;
-        margin-top: -8px;
-        border-radius: 50px;
-        opacity: 20%;
+            &:hover {
+                div {
+                    opacity: 40%;
+                }
+            }
+        }
     }
 }

@@ -40,6 +40,10 @@
             a {
                 color: $dark-grayish-blue;
                 text-decoration: none;
+
+                &:hover {
+                    color: $very-dark-desaturated-blue;
+                }
             }
 
             &:last-child {
@@ -50,7 +54,12 @@
                     display: block;
                     padding: 1rem 2.5rem;
                     background-color: $yellow;
+                    border: 2px solid $yellow;
                     border-radius: 50px;
+
+                    &:hover {
+                        background-color: $white;
+                    }
                 }
             }
         }

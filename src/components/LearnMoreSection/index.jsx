@@ -25,13 +25,12 @@ export default function LearnMoreSection({
             </p>
             <a href='/'>
                 Learn more
+                <div 
+                    style={{
+                        border: `5px solid ${color}`
+                    }}
+                ></div>
             </a>
-            <div 
-                className={styles.LearnMoreSection_underline}
-                style={{
-                    backgroundColor: `${color}`
-                }}
-            ></div>
         </div>
     </section>
   )
