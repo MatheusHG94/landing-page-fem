@@ -1,0 +1,22 @@
+[
+    {
+        "id": "1",
+        "src": "assets/images/mobile/image-gallery-milkbottles.jpg",
+        "alt": "lined milkbottles with cloudy background"
+    },
+    {
+        "id": "2",
+        "src": "assets/images/mobile/image-gallery-orange.jpg",
+        "alt": "half orange on a blue and white plate with orange background"
+    },
+    {
+        "id": "3",
+        "src": "assets/images/mobile/image-gallery-cone.jpg",
+        "alt": "empty ice cream cone with blue background"
+    },
+    {
+        "id": "4",
+        "src": "assets/images/mobile/image-gallery-sugar-cubes.jpg",
+        "alt": "stacked sugar cubes with pink background"
+    }
+]

@@ -1,21 +1,15 @@
 import React from 'react';
 import styles from './Gallery.module.scss';
+import imageList from './gallery.json';
 
 export default function Gallery() {
   return (
     <section className={styles.Gallery}>
-        <div className={styles.Gallery_image}>
-            <img src='assets/images/mobile/image-gallery-milkbottles.jpg' alt='lined milkbottles with cloudy background' />
-        </div>
-        <div className={styles.Gallery_image}>
-            <img src='assets/images/mobile/image-gallery-orange.jpg' alt='half orange on a blue and white plate with orange background' />
-        </div>
-        <div className={styles.Gallery_image}>
-            <img src='assets/images/mobile/image-gallery-cone.jpg' alt='empty ice cream cone with blue background' />
-        </div>
-        <div className={styles.Gallery_image}>
-            <img src='assets/images/mobile/image-gallery-sugar-cubes.jpg' alt='stacked sugar cubes with pink background' />
-        </div>
+        {imageList.map(image => 
+            <div key={image.id} className={styles.Gallery_image}>
+                <img src={image.src} alt={image.alt} />
+            </div>
+        )}
     </section>
   )
 }

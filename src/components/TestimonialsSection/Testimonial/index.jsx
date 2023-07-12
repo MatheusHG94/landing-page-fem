@@ -2,15 +2,16 @@ import React from 'react';
 import styles from './Testimonial.module.scss';
 
 export default function Testimonial({
-    image,
+    key,
+    imgSrc,
     testimonial,
     author,
     job
 }) {
   return (
-    <div className={styles.Testimonial}>
+    <div key={key} className={styles.Testimonial}>
         <div className={styles.Testimonial_image}>
-            <img src={image} alt='authors face' />
+            <img src={imgSrc} alt='authors face' />
         </div>
         <p>
             {testimonial}
