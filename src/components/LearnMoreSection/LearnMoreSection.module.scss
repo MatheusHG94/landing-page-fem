@@ -7,36 +7,39 @@
     }
 
     &_content {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        gap: 2rem;
         padding: 4rem 1.5rem;
         text-align: center;
 
         h2 {
             @include font($very-dark-desaturated-blue);
             font-size: 2rem;
-            margin-bottom: 2rem;
         }
 
         p {
             color: $dark-grayish-blue;
             line-height: 2rem;
-            margin-bottom: 2rem;
         }
 
         a {
             @include font($very-dark-desaturated-blue);
             text-decoration: none;
             text-transform: uppercase;
-            
+
             div {
-                margin: 0 90px;
-                margin-top: -8px;
+                position: relative;
+                margin: -8px -7px 0 -7px;
+                z-index: -1;
                 border-radius: 50px;
-                opacity: 20%;
+                opacity: 25%;
             }
 
             &:hover {
                 div {
-                    opacity: 40%;
+                    opacity: 50%;
                 }
             }
         }
