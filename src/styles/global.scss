@@ -23,4 +23,10 @@ body {
 .app-container {
     width: 375px;
     margin: 0 auto;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
 }

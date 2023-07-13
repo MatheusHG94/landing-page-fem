@@ -20,16 +20,16 @@ export default function Footer() {
             <a href='/'>Projects</a>
         </nav>
         <div className={styles.Footer_socialMedia}>
-            <a href='/'>
+            <a href='https://www.facebook.com/' target='_blank' rel='noreferrer'>
                 <Facebook />
             </a>
-            <a href='/'>
+            <a href='https://www.instagram.com/' target='_blank' rel='noreferrer'>
                 <Instagram />
             </a>
-            <a href='/'>
+            <a href='https://www.twitter.com/' target='_blank' rel='noreferrer'>
                 <Twitter />
             </a>
-            <a href='/'>
+            <a href='https://www.pinterest.com/' target='_blank' rel='noreferrer'>
                 <Pinterest />
             </a>
         </div>
