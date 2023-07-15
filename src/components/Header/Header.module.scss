@@ -4,9 +4,11 @@
 .Header {
     position: relative;
     background-color: $background-blue;
-    /* background: $background-blue url('../../assets/images/mobile/image-header.jpg') no-repeat center;
-    background-size: cover; */
-    height: 539px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    // background: $background-blue url('../../assets/images/mobile/image-header.jpg') no-repeat center;
+    height: 540px;
 
     &_bar {
         display: flex;
@@ -26,5 +28,26 @@
     &_arrowIcon {
         display: flex;
         justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .Header {
+        height: 800px;
+
+        &_bar {
+            padding: 3.5rem 2.5rem;
+
+            a {
+                // this is bad
+                transform: scale(150%);
+                padding-left: 2rem;
+            }
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            margin: 6rem 0;
+        }
     }
 }

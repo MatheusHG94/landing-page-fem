@@ -51,7 +51,6 @@
                     font-family: $font-accent;
                     font-weight: $font-weight-bold;
                     color: $very-dark-desaturated-blue;
-                    display: block;
                     padding: 1rem 2.5rem;
                     background-color: $yellow;
                     border: 2px solid $yellow;
@@ -68,5 +67,50 @@
             display: none;
         }
 
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .NavMenu {
+        &_list {
+            position: relative;
+            width: auto;
+            height: auto;
+            background-color: transparent;
+
+            display: flex;
+            flex-flow: row nowrap;
+            gap: 2rem;
+
+            &::before {
+                display: none;
+            }
+    
+            li {
+                a {
+                    color: $white;
+    
+                    &:hover {
+                        color: $very-dark-desaturated-blue;
+                    }
+                }
+    
+                &:last-child {
+                    a {
+                        font-family: $font-accent;
+                        font-weight: $font-weight-bold;
+                        color: $very-dark-desaturated-blue;
+                        padding: 1rem 2.5rem;
+                        background-color: $white;
+                        border: 2px solid $white;
+                        border-radius: 50px;
+    
+                        &:hover {
+                            background-color: $white;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
