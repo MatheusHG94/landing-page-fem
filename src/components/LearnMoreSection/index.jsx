@@ -4,16 +4,17 @@ import styles from './LearnMoreSection.module.scss';
 export default function LearnMoreSection({
     title,
     summary,
-    banner,
-    color
+    color,
+    deviceType,
+    image
 }) {
     return (
         <section className={styles.LearnMoreSection}>
             <div
                 className={styles.LearnMoreSection_banner}
                 style={{
-                    background: `${color} url(${banner}) no-repeat center`,
-                    backgroundSize: 'cover'
+                    backgroundColor: `${color}`,
+                    backgroundImage: `url('assets/images/${deviceType}/${image}.jpg')`
                 }}
             ></div>
             <div className={styles.LearnMoreSection_content}>

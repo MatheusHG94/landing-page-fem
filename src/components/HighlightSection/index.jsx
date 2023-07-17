@@ -4,15 +4,16 @@ import styles from './HighlightSection.module.scss';
 export default function HighlightSection({
     title,
     summary,
-    background,
-    color
+    color,
+    deviceType,
+    image
 }) {
   return (
     <section 
         className={styles.HighlightSection} 
         style={{
-            background: `${color} url(${background}) no-repeat center`,
-            backgroundSize: 'cover',
+            backgroundColor: `${color}`,
+            backgroundImage: `url('assets/images/${deviceType}/${image}.jpg')`,
             color: `${color}`
         }}
     >

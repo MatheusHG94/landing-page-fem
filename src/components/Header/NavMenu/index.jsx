@@ -1,22 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import styles from './NavMenu.module.scss';
 import { ReactComponent as HamburgerIcon } from 'assets/images/icon-hamburger.svg';
 
-export default function NavMenu() {
-    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
-    useEffect(() => {
-        const handleWindowResize = () => {
-            setWindowWidth(window.innerWidth);
-        };
-
-        window.addEventListener('resize', handleWindowResize);
-
-        return () => {
-            window.removeEventListener('resize', handleWindowResize);
-        };
-    });
-
+export default function NavMenu({
+    deviceType
+}) {
     const [menuOpen, setMenuOpen] = useState(false);
 
     function toggleMenu(e) {
@@ -35,13 +23,13 @@ export default function NavMenu() {
                     ${styles.NavMenu_button}
                     ${menuOpen ? styles.NavMenu_button___dim : ''}
                 `}
-                style={windowWidth >= 1440 ? { display: 'none' } : {}}
+                style={deviceType === 'desktop' ? { display: 'none' } : {}}
                 onClick={e => toggleMenu(e)}
             >
                 <HamburgerIcon />
             </div>
             <ul className={
-                windowWidth >= 1440 ?
+                deviceType === 'desktop' ?
                     styles.NavMenu_list :
                     menuOpen ?
                         styles.NavMenu_list :
