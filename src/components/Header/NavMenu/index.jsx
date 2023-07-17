@@ -19,22 +19,26 @@ export default function NavMenu({
     return (
         <nav className={styles.NavMenu}>
             <div
-                className={`
-                    ${styles.NavMenu_button}
-                    ${menuOpen ? styles.NavMenu_button___dim : ''}
-                `}
-                style={deviceType === 'desktop' ? { display: 'none' } : {}}
+                className={styles.NavMenu_button}
+                style={
+                    deviceType === 'desktop' ?
+                    { display: 'none' } :
+                    menuOpen ?
+                    { opacity: '50%' } :
+                    {}
+                }
                 onClick={e => toggleMenu(e)}
             >
                 <HamburgerIcon />
             </div>
-            <ul className={
-                deviceType === 'desktop' ?
-                    styles.NavMenu_list :
-                    menuOpen ?
-                        styles.NavMenu_list :
-                        styles.NavMenu_list___hidden
-            }>
+            <ul
+                className={styles.NavMenu_list}
+                style={
+                    deviceType === 'mobile' && !menuOpen ?
+                    {display: 'none'} :
+                    {}
+                }
+            >
                 <li><a href="/">About</a></li>
                 <li><a href="/">Services</a></li>
                 <li><a href="/">Projects</a></li>
