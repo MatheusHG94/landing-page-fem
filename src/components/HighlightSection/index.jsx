@@ -6,7 +6,8 @@ export default function HighlightSection({
     summary,
     color,
     deviceType,
-    image
+    image,
+    side
 }) {
   return (
     <section 
@@ -14,7 +15,8 @@ export default function HighlightSection({
         style={{
             backgroundColor: `${color}`,
             backgroundImage: `url('assets/images/${deviceType}/${image}.jpg')`,
-            color: `${color}`
+            color: `${color}`,
+            float: `${side}`
         }}
     >
         <h2>
