@@ -2,6 +2,9 @@
 @import 'styles/mixin';
 
 .LearnMoreSection {
+    display: flex;
+    flex-direction: column;
+
     &_banner {
         height: 312px;
         background-repeat: no-repeat;
@@ -44,6 +47,26 @@
                 div {
                     opacity: 50%;
                 }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .LearnMoreSection {
+        &_banner {
+            flex: 0 0 50%;
+            height: 600px;
+        }
+
+        &_content {
+            align-items: start;
+            text-align: left;
+            justify-content: center;
+            margin: auto 7rem;
+
+            h2 {
+                font-size: 2.5rem;
             }
         }
     }

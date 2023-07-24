@@ -36,6 +36,7 @@ export default function MainPage() {
           color='hsl(51, 100%, 49%)'
           deviceType={deviceType}
           image='image-transform'
+          direction='row'
         />
         <LearnMoreSection
           title='Stand out to the right audience'
@@ -43,6 +44,7 @@ export default function MainPage() {
           color='hsl(7, 99%, 70%)'
           deviceType={deviceType}
           image='image-stand-out'
+          direction='row-reverse'
         />
         <HighlightSection
           title='Graphic Design'

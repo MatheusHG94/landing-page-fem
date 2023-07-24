@@ -6,10 +6,14 @@ export default function LearnMoreSection({
     summary,
     color,
     deviceType,
-    image
+    image,
+    direction
 }) {
     return (
-        <section className={styles.LearnMoreSection}>
+        <section
+            className={styles.LearnMoreSection}
+            style={{ flexDirection: `${direction}` }}
+        >
             <div
                 className={styles.LearnMoreSection_banner}
                 style={{
