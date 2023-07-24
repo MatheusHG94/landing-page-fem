@@ -12,7 +12,11 @@ export default function LearnMoreSection({
     return (
         <section
             className={styles.LearnMoreSection}
-            style={{ flexDirection: `${direction}` }}
+            style={
+                deviceType === 'desktop' ?
+                { flexDirection: `${direction}` } : 
+                {}
+            }
         >
             <div
                 className={styles.LearnMoreSection_banner}

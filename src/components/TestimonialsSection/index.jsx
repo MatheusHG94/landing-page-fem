@@ -9,15 +9,17 @@ export default function TestimonialsSection() {
         <h2>
             Client Testimonials
         </h2>
-        {testimonialList.map(testimonial =>
-            <Testimonial 
-                key={testimonial.id}
-                imgSrc={testimonial.imgSrc}
-                testimonial={testimonial.testimonial}
-                author={testimonial.author}
-                job={testimonial.job}
-            />    
-        )}
+        <div className={styles.TestimonialsSection_testimonials}>
+          {testimonialList.map(testimonial =>
+              <Testimonial
+                  key={testimonial.id}
+                  imgSrc={testimonial.imgSrc}
+                  testimonial={testimonial.testimonial}
+                  author={testimonial.author}
+                  job={testimonial.job}
+              />
+          )}
+        </div>
     </section>
   )
 }

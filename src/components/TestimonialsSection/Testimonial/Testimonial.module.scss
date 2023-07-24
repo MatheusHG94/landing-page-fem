@@ -33,3 +33,11 @@
         font-size: 1rem;
     }
 }
+
+@media screen and (min-width: 1440px) {
+    .Testimonial {
+        p {
+            margin: 4rem 0;
+        }
+    }
+}

@@ -3,6 +3,8 @@
 
 .TestimonialsSection {
     padding: 4rem 1.5rem;
+    display: flex;
+    flex-direction: column;
 
     h2 {
         @include font($grayish-blue);
@@ -10,5 +12,22 @@
         text-align: center;
         font-size: 1rem;
         letter-spacing: 4px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .TestimonialsSection {
+        padding: 8rem;
+
+        h2 {
+            font-size: 1.5rem;
+            letter-spacing: 6px;
+        }
+
+        &_testimonials {
+            display: flex;
+            flex-direction: row;
+            gap: 2rem;
+        }
     }
 }
