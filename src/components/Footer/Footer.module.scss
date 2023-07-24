@@ -1,9 +1,15 @@
 @import 'styles/variables';
 
 .Footer {
+    display: flex;
+    justify-content: center;
     background-color: $background-footer;
-    padding: 4rem 2.5rem;
-    text-align: center;
+    
+    &_container {
+        width: 375px;
+        padding: 4rem 2.5rem;
+        text-align: center;
+    }
 
     &_logo {
         margin-bottom: 2.5rem;
