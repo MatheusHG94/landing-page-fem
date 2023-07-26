@@ -15,12 +15,12 @@ export default function Footer() {
                     <Logo />
                 </a>
             </div>
-            <nav>
+            <nav className={styles.Footer_nav}>
                 <a href='/'>About</a>
                 <a href='/'>Services</a>
                 <a href='/'>Projects</a>
             </nav>
-            <div className={styles.Footer_socialMedia}>
+            <nav className={styles.Footer_socialMedia}>
                 <a href='https://www.facebook.com/' target='_blank' rel='noreferrer'>
                     <Facebook />
                 </a>
@@ -33,7 +33,7 @@ export default function Footer() {
                 <a href='https://www.pinterest.com/' target='_blank' rel='noreferrer'>
                     <Pinterest />
                 </a>
-            </div>
+            </nav>
         </div>
     </footer>
   )
