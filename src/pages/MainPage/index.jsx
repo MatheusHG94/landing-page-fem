@@ -7,7 +7,7 @@ import LearnMoreSection from 'components/LearnMoreSection';
 import TestimonialsSection from 'components/TestimonialsSection';
 
 export default function MainPage() {
-  // https://codingbeautydev.com/blog/react-get-window-width-on-resize/
+
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
