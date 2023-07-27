@@ -13,6 +13,11 @@
         font-size: 1rem;
         letter-spacing: 4px;
     }
+
+    &_testimonials {
+        display: flex;
+        flex-flow: column nowrap;
+    }
 }
 
 @media screen and (min-width: 1440px) {
@@ -25,8 +30,7 @@
         }
 
         &_testimonials {
-            display: flex;
-            flex-direction: row;
+            flex-flow: row nowrap;
             gap: 2rem;
         }
     }
