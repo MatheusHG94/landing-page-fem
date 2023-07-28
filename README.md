@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github](https://your-solution-url.com)
+- Solution URL: [Github](https://github.com/MatheusHG94/landing-page-fem)
 - Live Site URL: [Vercel](https://landing-page-fem-ten.vercel.app/)
 
 ## My process
