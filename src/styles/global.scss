@@ -21,14 +21,16 @@ body {
 }
 
 .app-container {
-    width: 375px;
+    min-width: 375px;
+    max-width: 425px;
     margin: 0 auto;
     overflow-x: hidden;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) {
     .app-container {
-        width: 1440px;
+        min-width: 1024px;
+        max-width: 1440px;
     }
 }
 

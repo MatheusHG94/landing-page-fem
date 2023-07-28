@@ -22,7 +22,7 @@ export default function MainPage() {
     };
   });
 
-  let deviceType = windowWidth >= 1440 ? 'desktop' : 'mobile';
+  let deviceType = windowWidth >= 1024 ? 'desktop' : 'mobile';
 
   return (
     <>
