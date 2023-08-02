@@ -7,11 +7,10 @@ export default function HighlightSection({
     color,
     deviceType,
     image,
-    side
+    position
 }) {
 
-    // this is bad
-    const float = deviceType === 'desktop' ? side : 'none';
+    const float = deviceType === 'desktop' ? position : 'none';
 
     return (
         <section

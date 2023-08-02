@@ -52,7 +52,7 @@ export default function MainPage() {
           color='hsl(167, 40%, 24%)'
           deviceType={deviceType}
           image='image-graphic-design'
-          side='left'
+          position='left'
         />
         <HighlightSection
           title='Photography'
@@ -60,7 +60,7 @@ export default function MainPage() {
           color='hsl(198, 62%, 26%)'
           deviceType={deviceType}
           image='image-photography'
-          side='right'
+          position='right'
         />
         <TestimonialsSection />
         <Gallery />
